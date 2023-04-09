@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ansari_pizza_store/static/css/main.31d6cfe0.css",
+    "main.js": "/ansari_pizza_store/static/js/main.0a9e194a.js",
+    "static/media/pizza.png": "/ansari_pizza_store/static/media/pizza.1291a2daa8a2abca2fb0.png",
+    "static/media/logo.png": "/ansari_pizza_store/static/media/logo.78e0683e053cadd3e976.png",
+    "static/media/empty_cart.png": "/ansari_pizza_store/static/media/empty_cart.fe6f4bb6b499e8dcbae1.png",
+    "index.html": "/ansari_pizza_store/index.html",
+    "main.0a9e194a.js.map": "/ansari_pizza_store/static/js/main.0a9e194a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.0a9e194a.js"
+  ]
+}
