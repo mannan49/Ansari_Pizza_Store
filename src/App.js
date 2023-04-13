@@ -6,18 +6,10 @@ import Home from "./Components/Home";
 import SeparateProduct from "./Components/SeparateProduct";
 import ProductsPage from "./Components/ProductsPage";
 import { CartContext } from "./CartContext";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "./Components/Footer";
 function App() {
-  const { cart: cartItems, clearCart } = useContext(CartContext);
-
-  // Detect page refresh and clear the cart
-  useEffect(() => {
-    window.addEventListener("beforeunload", clearCart);
-    return () => {
-      window.removeEventListener("beforeunload", clearCart);
-    };
-  }, [clearCart]);
+  
   const [cart,setCart] = useState({});
   useEffect(()=>{
     const cart = window.localStorage.getItem('cart')
