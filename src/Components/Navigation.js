@@ -24,7 +24,7 @@ function Navigation() {
             <Link to="/cart">
                 <div className="flex items-center px-2 py-2  bg-yellow-500" style={{borderRadius: 15}}>
                     <span style={{fontSize: 16}}>{ cart.totalItems ? cart.totalItems : 0 }</span>
-                    <img className="mr-2" src={cartIcon} alt="" srcset="" />
+                    <img className="mr-2" style={{height: 40}} src={cartIcon} alt="" srcset="" />
                 </div>
             </Link>
           </li>

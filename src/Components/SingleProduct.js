@@ -32,13 +32,13 @@ function SingleProduct(props) {
   return (
     <>
       <Link to = {`/products/${product._id}`}>
-        <div>
+        <div className="flex flex-col justify-center items-center">
           <img src={product.image} />
           <h2 className="text-lg font-bold py-2">{product.name}</h2>
           <span className="bg-gray-200 py-1 rounded-full text-sm px-4">
             {product.size}
           </span>
-          <div className="flex justify-around md:justify-between item-center mt-4">
+          <div className="flex justify-around w-full md:justify-between item-center mt-4">
             <span>Rs. {product.price}</span>
             <button disabled={isAdding} onClick={(e)=>{addToCart(e, product)}} className={`${ isAdding ? 'bg-green-500 py-1 px-4 rounded-full font-bold': "bg-yellow-500 py-1 px-4 rounded-full font-bold"}`}>
               ADD{ isAdding ? 'ED': ''}

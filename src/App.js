@@ -7,6 +7,7 @@ import SeparateProduct from "./Components/SeparateProduct";
 import ProductsPage from "./Components/ProductsPage";
 import { CartContext } from "./CartContext";
 import { useEffect, useState } from "react";
+import Footer from "./Components/Footer";
 function App() {
   const [cart,setCart] = useState({});
   useEffect(()=>{
@@ -29,6 +30,7 @@ function App() {
             <Route path="/products/:_id" element={<SeparateProduct />}></Route>
             <Route path="/cart" element={<CartPage />}></Route>
           </Routes>
+          <Footer />
         </div>
       </CartContext.Provider>
     </Router>
