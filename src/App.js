@@ -9,7 +9,7 @@ import { CartContext } from "./CartContext";
 import { useContext, useEffect, useState } from "react";
 import Footer from "./Components/Footer";
 function App() {
-  const { loadCart, clearCart } = useContext(CartContext);
+  const { cart: cartItems, clearCart } = useContext(CartContext);
 
   // Detect page refresh and clear the cart
   useEffect(() => {
