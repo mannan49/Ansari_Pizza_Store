@@ -114,7 +114,7 @@ const Cart = () => {
                     +
                   </button>
                 </div>
-                <span>₹ {getSum(product._id, product.price)}</span>
+                <span>Rs. {getSum(product._id, product.price)}</span>
                 <button
                   onClick={() => {
                     handleDelete(product._id);
@@ -130,7 +130,7 @@ const Cart = () => {
       </ul>
       <hr className="my-6" />
       <div className="text-right">
-        <b>Grand Total:</b> ₹ {total}
+        <b>Grand Total:</b> Rs. {total}
       </div>
       <div className="text-right mt-6">
         <button
