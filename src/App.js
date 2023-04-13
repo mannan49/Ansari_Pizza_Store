@@ -6,7 +6,7 @@ import Home from "./Components/Home";
 import SeparateProduct from "./Components/SeparateProduct";
 import ProductsPage from "./Components/ProductsPage";
 import { CartContext } from "./CartContext";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Footer from "./Components/Footer";
 function App() {
   const { loadCart, clearCart } = useContext(CartContext);
